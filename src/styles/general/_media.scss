@@ -1,0 +1,563 @@
+// Малые девайсы («ландшафтные телефоны», >= 576px)
+@media (max-width: 576px) {
+  h2.__head {
+    font-size: 35px;
+  }
+  .full-width-slider {
+    .slider-dots-navigation {
+      top: 90%;
+    }
+    .slides li:nth-of-type(1) {
+      div {
+        a.selected__button {
+          font-size: 12px;
+          padding: 12px 40px;
+        }
+      }
+    }
+    .slides li:nth-of-type(1) {
+      div {
+        p.__name {
+          display: none;
+        }
+        h2 {
+          font-size: 35px;
+        }
+      }
+    }
+    .slides li:nth-of-type(2) {
+      div:first-child {
+        p.__name {
+          display: none;
+        }
+        h2 {
+          font-size: 35px;
+        }
+        a.selected__button {
+          font-size: 12px;
+          padding: 12px 40px;
+        }
+      }
+      div:last-child {
+        .pulse {
+          width: 130px;
+          height: 130px;
+          span {
+            width: 80px;
+            height: 80px;
+          }
+        }
+      }
+    }
+    .slides li:nth-of-type(3) {
+      div {
+        p.__name {
+          display: none;
+        }
+        h2 {
+          font-size: 80px;
+          text-align: center;
+        }
+        a.selected__button {
+          font-size: 12px;
+          padding: 12px 40px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    .testimonials-slider {
+      &::after {
+        display: none;
+      }
+    }
+    width: auto;
+  }
+  .special {
+    .special__animtext p {
+      font-size: 45px;
+    }
+  }
+  .sell-banner {
+    .sell-banner__info {
+      b, span {
+        font-size: 45px;
+      }
+    }
+  }
+  .gallery {
+    .gallery__unit {
+      .gallery__unit--text {
+        padding: 0 15px;
+        // height: 500px;
+        justify-content: flex-start;
+        > div {
+          p {
+            margin-top: 5px;
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    .blog--head {
+      width: auto;
+    }
+    .blog--posts {
+      justify-content: space-evenly;
+      .post {
+        min-width: 100%;
+        max-width: 100;
+        width: 100;
+        .post--img {
+          height: 370px;
+        }
+      }
+    }
+  }
+  .feedback {
+    .feedback--head {
+      p {
+        width: 100%;
+        padding: 0 15px;
+      }
+    }
+    .feedback--form {
+      max-width: 100%;
+      .contact-form .short {
+        width: 100%;
+      }
+    }
+  }
+  .footer {
+    .footer--top {
+      .footer--top__links {
+        width: 100%;
+        .text {
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+      }
+      .footer--top__social {
+        margin: 10px auto;
+      }
+      .footer--top__subscribe {
+        button.transparent-button {
+          padding: 10px 28px;
+        }
+      }
+    }
+  }
+}
+// Средние девайсы («таблетки», >= 768px)
+@media (max-width: 768px) {
+  .full-width-slider {
+    .slides li:nth-of-type(1) {
+      div {
+        width: 500px;
+        h2 {
+          font-size: 48px;
+        }
+      }
+    }
+    .slides li:nth-of-type(2) {
+      flex-flow: column nowrap;
+      justify-content: center;
+    }
+    .slides li:nth-of-type(3) {
+      margin: 0 auto;
+      div {
+        h2 {
+          font-size: 130px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    width: 400px;
+    .testimonials-slider {
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  .special {
+    .special__animtext p {
+      font-size: 65px;
+    }
+  }
+  .sell-banner {
+    .sell-banner__info {
+      padding: 65px 0 100px;
+      width: auto;
+      text-align: center;
+      b, span {
+        font-size: 55px;
+      }
+    }
+    .sell-banner__price {
+      display: none;
+    }
+  }
+  .__sell-banner-bg {
+    background: var(--sell-banner-color);
+  }
+  .gallery {
+    .gallery__unit {
+      flex: 1 1 100%;
+      .gallery__unit--text {
+        max-width: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        > div {
+          margin: 0 auto;
+          text-align: center;
+          h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .blog {
+    .blog--head {
+      width: auto;
+    }
+    .blog--posts {
+      justify-content: space-evenly;
+      .post {
+        min-width: 240px;
+        max-width: 240px;
+        width: 240px;
+        .post--text {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .feedback {
+    .feedback--head {
+      p {
+        max-width: 510px;
+        padding: 0 15px;
+      }
+    }
+    .feedback--form {
+      max-width: 510px;
+      .contact-form .short {
+        width: 100%;
+      }
+    }
+  }
+  .__feedback-bg {
+    padding: 70px 15px;
+  }
+  .footer {
+    padding: 0;
+    .footer--top {
+      .footer--top__links {
+        max-width: 100%;
+      }
+    }
+  }
+}
+// Большие девайсы (десктопы, >= 992px)
+@media (max-width: 992px) {
+  // Drop-down menu
+  .submenu-parent {
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      margin-top: 5px;
+    }
+  }
+  header {
+    .header {
+      justify-content: center;
+      // Mobile Menu
+      #toggle {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 20px;
+        width: 24px;
+        height: 36px;
+        margin-top: 30px;
+        margin-left: auto;
+        z-index: 999;
+        input {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          opacity: 0;
+          cursor: pointer;
+          &:checked {
+            + span {
+              background: transparent;
+              &:after {
+                transform: rotate(45deg) translate(-1px, -4px);
+              }
+              &:before {
+                transform: rotate(-45deg) translate(-4px, 8px);
+              }
+            }
+          }
+        }
+        span {
+          position: absolute;
+          width: 100%;
+          height: 3px;
+          background: #fff;
+          margin-top: 10px;
+          transition: all 0.1s;
+          &:before,
+          &:after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background: #fff;
+            top: -6px;
+            transition: all 0.3s;
+          }
+          &:after {
+            top: 6px;
+          }
+        }
+      }
+      #mobile-menu__bg {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--mobile-menu-color);
+        overflow: hidden;
+      }
+      // Mobile Menu End
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 69px;
+        height: 90px;
+      }
+      .header__hav {
+        display: none;
+        position: relative;
+        flex-flow: column nowrap;
+        padding-top: 35%;
+        .header__hav--items {
+          ul {
+            flex-flow: column nowrap;
+            li {
+              width: 160px;
+              padding: 7px 0;
+              &:hover .submenu {
+                display: block;
+                position: relative;
+                transition: all 0.5s;
+              }
+              .submenu {
+                background-color: transparent;
+                padding: 0 10px;
+                height: 100%;
+              }
+            }
+          }
+        }
+        a.color-button {
+          margin-left: 0;
+          margin-top: 5px;
+          padding: 15px 32px;
+        }
+      }
+    }
+  }
+  .full-width-slider {
+    .slides li:nth-of-type(1) {
+      div {
+        width: 600px;
+        p {
+          text-align: center;
+        }
+        h2 {
+          font-size: 55px;
+          text-align: center;
+        }
+      }
+    }
+    .slides li:nth-of-type(2) {
+      padding: 0 50px;
+      div:first-child {
+        h2 {
+          font-size: 55px;
+        }
+      }
+      div:last-child {
+        width: 145px;
+      }
+    }
+    .slides li:nth-of-type(3) {
+      div {
+        width: auto;
+        h2 {
+          font-size: 150px;
+        }
+      }
+    }
+  }
+  .special {
+    .special__animtext p {
+      font-size: 85px;
+    }
+    .special__about {
+      flex-flow: column nowrap;
+      align-items: center;
+      background-image: none;
+      margin: 50px 0;
+      .special__about--text-box {
+        max-width: 690px;
+      }
+      .special__about--button-box {
+        align-items: center;
+        h2 {
+          text-align: center;
+        }
+        a {
+          margin-top: 60px;
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+  .testimonials {
+    width: 550px;
+  }
+  .feedback {
+    .feedback--form {
+      .contact-form .short {
+        width: calc(50% - 20px);
+      }
+    }
+    .feedback--form {
+      max-width: 720px;
+    }
+  }
+  .__feedback-bg {
+    padding: 100px 15px;
+  }
+  .footer {
+    .footer--top {
+      max-width: 720px;
+      margin: 0 auto;
+      .footer--top__subscribe {
+        align-items: center;
+        margin: 0 auto;
+        width: 100%;
+        h5 {
+          padding-bottom: 10px;
+        }
+        form {
+          display: flex;
+          width: 100%;
+          padding-bottom: 20px;
+          div {
+            width: 100%;
+            input {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .footer--bottom {
+      flex-flow: column-reverse nowrap;
+      align-items: center;
+      padding-bottom: 20px;
+      .footer--bottom__copyright,
+      .footer--bottom__menu {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+// Экстрабольшие девайсы (большие десктопы, >= 1200px)
+@media (max-width: 1200px) {
+  .full-width-slider {
+    .slides li:nth-of-type(2) div .selected__lead {
+      text-align: left;
+    }
+    .slides li:nth-of-type(2) {
+      padding: 0 70px;
+    }
+  }
+  .testimonials {
+    width: 750px;
+  }
+  .number {
+    justify-content: center;
+    .number__unit {
+      padding: 10px 20px;
+    }
+  }
+  .gallery {
+    .no-text {
+      display: none;
+    }
+  }
+  .sponsor {
+    .slick-dots {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+    .slick-dots li button {
+      width: 8px;
+      height: 8px;
+      &:before {
+        color: transparent;
+        width: 8px;
+        height: 8px;
+        border: 2px solid #5b5b5b;
+        border-radius: 50%;
+      }
+    }
+    .slick-dots li.slick-active button {
+      &:before {
+        background: var(--main-color);
+        border: 2px solid var(--main-color);
+      }
+    }
+  }
+  .footer {
+    .footer--top {
+      .footer--top__links {
+        .logo {
+          padding: 0;
+        }
+        .text {
+          padding-right: 5px;
+        }
+      }
+      .footer--top__subscribe {
+        padding: 0;
+      }
+    }
+    .footer--bottom {
+      .footer--bottom__copyright {
+        padding: 0;
+      }
+      .footer--bottom__menu {
+        nav li:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}

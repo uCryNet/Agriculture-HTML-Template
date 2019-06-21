@@ -1,0 +1,8 @@
+@import "libs";
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "general/fonts";
+@import "general/base";
+@import "general/section"; // special style for blocks
+@import "../blocks/blocks";
+@import "general/media"; // media breakpoint

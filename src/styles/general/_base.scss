@@ -1,0 +1,152 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: var(--extra-font);
+	font-size: var(--font-size);
+	width: 100%;
+  color: var(--dark-color);
+  overflow-x: hidden;
+}
+// Reset
+h1, h2, h3, h4, h5, h6 {
+	padding: 0;
+	margin: 0;
+	font-family: var(--extra-font);
+	line-height: 1.2;
+    font-weight: 900;
+}
+ul, p, a {
+	padding: 0;
+	margin: 0;
+}
+h2 {
+	font-size: 4.7rem;
+}
+a {
+	text-decoration: none;
+	color: #000;
+}
+li {
+	list-style: none;
+}
+figure {
+	margin: 0;
+}
+button {
+	background-color: transparent;
+}
+input, textarea {
+	font-family: var(--main-font);
+	font-size: 14px;
+	width: 100%;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #dadada;
+	color: #666;
+	font-weight: 500;
+	transition: 0.5s;
+	padding: 13px 0;
+	&::placeholder {
+		color: #cccccc;
+	}
+	&:hover {
+		color: var(--main-color);
+	}
+	&:focus {
+		outline: none;
+		color: var(--main-color);
+	}
+}
+// Fix size
+.wrapper {
+	max-width: 1170px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin: 0 auto;
+}
+// Button
+.color-button {
+	@include color-button;
+}
+.transparent-button {
+	@include transparent-button;
+}
+// Submenu ::after
+.submenu-parent {
+	margin-right: 15px;
+	transition: all .3s ease 0s;
+	&::after {
+		content: url(../img/expand-button.svg);
+		position: relative;
+		margin-left: -5px;
+	}
+}
+// Adaptive img {
+.img-adaptive {
+	width: 100%;
+	height: auto;
+}
+// Custom selector
+span {
+	font-weight: 100;
+}
+p {
+	font-family: var(--main-font);
+}
+// Custom global class
+// h2 header
+.__head {
+  text-align: center;
+	font-size: 40px;
+	color: var(--dark-color);
+}
+// Company name
+.__name {
+	text-align: left;
+	font-size: 2.5rem;
+	font-weight: 100;
+	font-family: var( --extra-font);
+	text-transform: uppercase;
+}
+// Blog post h3
+.__title {
+	font-family: var(--extra-font);
+	font-size: 18px;
+	font-weight: 700;
+	transition: color .3s ease-in-out;
+}
+// Video in slider
+.video {
+	display: flex;
+	position: absolute;
+	justify-content: center;
+	align-items: center;;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(34,31,29, 0.9);
+	transition: .2s ease-out;
+	.video-box {
+		position: relative;
+		width: 100%;
+		max-width: 1525px;
+		&::before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 0;
+			padding-bottom: 56.25%; /* 9:16 */
+		}
+		iframe {
+			box-sizing:border-box;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

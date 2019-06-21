@@ -1,0 +1,222 @@
+.full-width-slider {
+	position: relative;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	margin-bottom: 150px;
+	animation: fade-in 1.5s linear;
+	@keyframes fade-in {
+		0% { opacity: 0.1; }
+		100% { opacity: 1; }
+	}
+	.slides {
+		position: relative;
+		height: 100%;
+		background-color: var(--white-color);
+		li {
+			display: flex;
+			position: absolute;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+			transform: translateX(100%);
+			//Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+			transition: transform 0.5s;
+			background-image: url(../img/overlays/05.png), url(../img/slider/img_1.jpg);
+			background-repeat: repeat, no-repeat;
+			background-size: auto, cover;
+			background-position: center, center;
+			justify-content: center;
+			align-items: center;
+			div {
+				display: flex;
+				position: relative;
+				max-width: 750px;
+				margin: 0 15px 40px;
+				h2 {
+					text-align: left;
+					margin: 20px 0;
+				}
+				.selected__lead {
+					font-family: var(--main-font);
+					line-height: 26px;
+					text-align: center;
+					padding-left: 15px;
+					padding-right: 15px;
+					padding-bottom: 55px;
+				}
+				.selected__button {
+					@include transparent-button;
+					color: var(--white-color);
+				}
+			}
+			&:nth-of-type(2) {
+				display: flex;
+				justify-content: space-around;
+				background-image: url(../img/overlays/05.png), url(../img/slider/img_2.jpg);
+				background-repeat: repeat, no-repeat;
+				background-size: auto, cover;
+				background-position: center, center;
+				padding: 0 170px;
+				div {
+          display: flex;
+					flex-flow: column nowrap;
+					justify-content: flex-start;
+					margin: 10px 15px 0;
+          align-items: flex-start;
+          // &:first-child {
+          //   width: 700px;
+          // }
+					.selected__lead {
+						padding-left: 0;
+						padding-right: 0;
+					}
+					.pulse {
+            display: flex;
+            position: relative;
+						justify-content: center;
+						align-items: center;
+						position: relative;
+						width: 145px;
+						height: 145px;
+						border: 2px solid var(--white-color);
+						border-radius: 50%;
+						span {
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							width: 91px;
+							height: 91px;
+							border-radius: 50%;
+							background: var(--main-color);
+							animation: radial-pulse 1.5s infinite;
+							// big round button
+							@keyframes radial-pulse {
+								0% {
+								  box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.8);
+								}
+
+								100% {
+								  box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+								}
+							  }
+							&::after {
+								content: url(../img/play.svg);
+								margin-top: 5px;
+								margin-left: 5px;
+							}
+						}
+					}
+				}
+			}
+			&:nth-of-type(3) {
+				background-image: url(../img/overlays/05.png), url(../img/slider/img_3.jpg);
+				background-repeat: repeat, no-repeat;
+				background-size: auto, cover;
+				background-position: center, center;
+				h2 {
+					font-family: var(--custom-font);
+					font-weight: 900;
+					font-size: 12.5rem;
+					text-transform: none;
+					margin-bottom: 45px;
+					span {
+						color: var(--main-color);
+					}
+				}
+			}
+			&.selected {
+				z-index: 2;
+				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: translateX(0);
+			}
+			&.move-left {
+				//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+				transform: translateX(-50%);
+			}
+			&.visible {
+				z-index: 2;
+			}
+			> div {
+				display: table-cell;
+				vertical-align: middle;
+				text-align: center;
+				color: var(--white-color);;
+			}
+		}
+		h2 {
+			margin-top: 0;
+		}
+	}
+	.slider-dots-navigation {
+		display: flex;
+		flex-flow: column nowrap;
+		position: absolute;
+		z-index: 3;
+		top: 50%;
+		right: 15px;
+		padding-left: 0;
+		transform: translateY(-50%);
+		li {
+			display: flex;
+			justify-content: flex-end;
+			&:last-of-type {
+				margin-right: 0;
+			}
+		}
+		a {
+			height: 12px;
+			width: 12px;
+			margin: 3px 0;
+			//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+			border-radius: 50%;
+			border: 2px solid rgba(255, 255, 255, 0.5);
+			overflow: hidden;
+			white-space: nowrap;
+			text-indent: 100%;
+			color: transparent;
+			transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, width 0.3s ease-in-out, border-radius 0.3s ease-in-out;
+			&:hover,
+			&:active {
+				width: 25px;
+				border-radius: 30px;
+			}
+			&.selected {
+				background-color: var(--white-color);
+				width: 25px;
+				border-radius: 30px;
+			}
+		}
+	}
+	.scroll-line {
+		display: block;
+		position: absolute;
+		width: 15px;
+		height: 130px;
+		top: 94.5%;
+		left: 50%;
+		z-index: 999;
+		transform: translateX(-50%);
+		&::after,
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			width: 5px;
+			background: var(--main-color);
+			border-radius: 5px;
+		}
+		&::before {
+			height: 75px;
+			margin-top: 12px;
+		}
+		&::after {
+			height: 130px;
+			margin-left: 10px;
+		}
+	}
+}

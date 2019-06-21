@@ -1,0 +1,13 @@
+<script src="./js/main.js" defer></script>
+
+<script>
+  function initMap() {
+    var image = '../img/marker.png';
+    var uluru = { lat: 44.95238, lng: 34.10292 };
+    var map = new google.maps.Map(
+      document.getElementById('mapFooter'), { zoom: 15, center: uluru, disableDefaultUI: true });
+    var marker = new google.maps.Marker({ position: uluru, map: map, icon: image });
+  }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdnrnaG9JH0AZrlns7jTBlDGiPJKs4Gvo&callback=initMap" async
+  defer></script>
