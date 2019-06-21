@@ -1,6 +1,6 @@
 # Agriculture-HTML-Template
 
-<img src="http://demo.artureanec.com/html/agro/demo_img/d1.jpg"/>
+<img src="https://github.com/uCryNet/Agriculture-HTML-Template/blob/master/Screenshot.png"/>
 
 
 This is a free fork paid template [Agro](https://themeforest.net/item/agro-agriculture-organic-food-html-template-pack/23207310). Not all pages, not Pixel Perfect but replica. [Live review](http://demo.artureanec.com/html/agro/index.html)
