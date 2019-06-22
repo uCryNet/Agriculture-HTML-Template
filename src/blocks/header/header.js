@@ -19,11 +19,11 @@ toggle.onclick = () => {
     mobileMenuBg.style.display = 'none';
     scrollLine.style.display = 'block';
     menuMobile.style.display = 'none';
-    document.body.style.overflow = 'auto'; // disable scrolling in menu
+    document.body.style.overflowY = 'auto'; // disable scrolling in menu
   } else {
     mobileMenuBg.style.display = 'block';
     scrollLine.style.display = 'none';
     menuMobile.style.display = 'flex';
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowY = 'hidden';
   }
 }

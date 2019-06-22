@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>New Page</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css">
+	</head>
+	<body>
+		<h1>New Page</h1>
+		<script src="./js/main.js" defer></script>
+		
+		<script>
+		  function initMap() {
+		    var image = '../img/marker.png';
+		    var uluru = { lat: 44.95238, lng: 34.10292 };
+		    var map = new google.maps.Map(
+		      document.getElementById('mapFooter'), { zoom: 15, center: uluru, disableDefaultUI: true });
+		    var marker = new google.maps.Marker({ position: uluru, map: map, icon: image });
+		  }
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdnrnaG9JH0AZrlns7jTBlDGiPJKs4Gvo&callback=initMap" async
+		  defer></script>
+	</body>
+</html>

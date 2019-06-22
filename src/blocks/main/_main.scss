@@ -40,7 +40,7 @@
     }
   }
   .special__animtext {
-    background-image: url("/img/special__animtext.jpg");
+    background-image: url("../img/special__animtext.jpg");
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-clip: text;
@@ -77,7 +77,7 @@
     flex-wrap: wrap;
     flex: 0 0 33.33%;
     position: relative;
-    background-image: url("/img/agro.png");
+    background-image: url("../img/agro.png");
     background-position: center center;
     background-repeat: no-repeat;
     height: 303px;

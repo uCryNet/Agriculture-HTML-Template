@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>gulp-scss-starter</title>
+		<meta name="theme-color" content="#c9e0e04d">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<link rel="shortcut icon" href="./img/favicons/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./img/favicons/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="57x57" href="./img/favicons/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./img/favicons/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./img/favicons/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./img/favicons/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./img/favicons/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./img/favicons/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon-180x180.png">
+		<link rel="stylesheet" href="./styles/main.css">
+	</head>
+	<body>
+        <header class="wrapper-full">
+            <div class="header">
+                <!-- Mobile Menu -->
+                <div id="toggle">
+                    <input type="checkbox">
+                    <span></span>
+                </div>
+                <div id="mobile-menu__bg">
+                </div>
+                <!-- /Mobile Menu -->
+                <a href="/">
+                    <img src="img/site_logo.png" alt="">
+                </a>
+                <div class="header__hav">
+                    <nav class="header__hav--items">
+                        <ul>
+                            <li>
+                                <a class="--link" href="">HOME</a>
+                            </li>
+                            <li>
+                                <a class="--link" href="">ABOUT</a>
+                            </li>
+                            <li>
+                                <a class="--link" href="javascript:void(0);">PAGES</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">SERVICES</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PRODUCTS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">PRODUCT DETAILS</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">TYPOGRAPHY</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">404 PAGE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="--link" href="javascript:void(0);">GALLERY</a>
+                                <ul class="submenu">
+                                    <li>
+                                        <a href="#">GALLERY 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">GALLERY 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="--link" href="">BLOG</a>
+                            </li>
+                            <li>
+                                <a class="--link" href="">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="color-button">Get in Touch</a>
+                </div>
+            </div>
+        </header>
+        <div class="full-width-slider">
+        	<ul class="slides">
+        		<li class="selected">
+        			<div>
+        				<p class="__name ">AGRO</p>
+        				<h2>FARMING COMPANY</h2>
+        				<p class="selected__lead">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English</p>
+        				<a class="selected__button" href="#">DISCOVER</a>
+        			</div>
+        		</li>
+        		<li>
+        			<div>
+        				<p id class="__name ">AGRO</p>
+        				<h2>BEST HARVEST<br>
+        					<span>IN THE WORLD</span>
+        				</h2>
+        				<p class="selected__lead">The point of using Lorem Ipsum is that it has a more-or-less normal distribution</p>
+        				<a class="selected__button" href="#">DISCOVER</a>
+        			</div>
+        			<div>
+        				<a id="play" class="pulse" href="#">
+        					<span></span>
+        				</a>
+        			</div>
+        		</li>
+        		<li>
+        			<div>
+        				<p class="__name ">AGRO</p>
+        				<h2>Live<span>stock</span></h2>
+        				<a class="selected__button" href="#">DISCOVER</a>
+        			</div>
+        		</li>
+        	</ul> <!-- slides -->
+        	<ol class="slider-dots-navigation">
+        		<li><a href="#0" class="selected">1</a></li>
+        		<li><a href="#0">2</a></li>
+        		<li><a href="#0">3</a></li>
+        	</ol>
+        	
+        </div> <!-- full-width-slider -->
+		<main>
+		  <section>
+		    <div class="scroll-line"></div>
+		    <a id="up-button"></a>
+		    <div class="wrapper">
+		      <div class="special">
+		        <div data-aos="fade" class="special--text">
+		          <h2 class="__head">SPECIAL <span>OFFERS</span></h2>
+		          <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		            reasonable.</p>
+		        </div>
+		        <div class="special__icon">
+		          <div data-aos="fade" data-aos-delay="100" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/1.png" alt="img">
+		            <h5>Farm Livestock</h5>
+		          </div>
+		          <div data-aos="fade" data-aos-delay="200" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/2.png" alt="img">
+		            <h5>Garden Tillage</h5>
+		          </div>
+		          <div data-aos="fade" data-aos-delay="300" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/3.png" alt="img">
+		            <h5>Fresh Fruits</h5>
+		          </div>
+		          <div data-aos="fade" data-aos-delay="400" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/4.png" alt="img">
+		            <h5>Vegatables</h5>
+		          </div>
+		          <div data-aos="fade" data-aos-delay="500" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/5.png" alt="img">
+		            <h5>Awesome Wheats</h5>
+		          </div>
+		          <div data-aos="fade" data-aos-delay="600" data-aos-offset="100" class="special__icon--unit">
+		            <img src="img/icons/6.png" alt="img">
+		            <h5>Agro Machinery</h5>
+		          </div>
+		        </div>
+		        <div data-aos="zoom-in" class="special__animtext">
+		          <p>SPECIAL PRODUCTS FOR MOST PEOPLE</p>
+		        </div>
+		        <div class="special__about">
+		          <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="500" data-aos-offset="100"
+		            class="special__about--button-box">
+		            <h2 class="__head">ABOUT AGRO <span>FARM COMPANY</span></h2>
+		            <a href="#" class="transparent-button">MORE ABOUT</a>
+		          </div>
+		          <div data-aos="fade-up" ddata-aos-duration="600" data-aos-offset="100" class="special__about--img-box">
+		            <img src="img/img_1.png" alt="img">
+		          </div>
+		          <div data-aos="fade-right" data-aos-delay="400" data-aos-duration="500" data-aos-offset="100"
+		            class="special__about--text-box">
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable.</p>
+		            <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic
+		              words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+		              classi</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section class="__number-bg">
+		    <div class="wrapper">
+		      <div class="number">
+		        <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="150" class="number__unit">
+		          <div class="number__unit--img">
+		            <img src="img/ico_count_1.png" alt="img">
+		          </div>
+		          <div class="number__unit--text">
+		            <span class="__number" data-init="19450" data-max="19500"></span>
+		            <p>Tons of harvesta</p>
+		          </div>
+		        </div>
+		        <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="300" class="number__unit">
+		          <div class="number__unit--img">
+		            <img src="img/ico_count_2.png" alt="img">
+		          </div>
+		          <div class="number__unit--text">
+		            <span class="__number" data-init="2670" data-max="2720"></span>
+		            <p>Tons of harvesta</p>
+		          </div>
+		        </div>
+		        <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="450" class="number__unit">
+		          <div class="number__unit--img">
+		            <img src="img/ico_count_3.png" alt="img">
+		          </div>
+		          <div class="number__unit--text">
+		            <span class="__number" data-init="9950" data-max="10000"></span>
+		            <p>Tons of harvesta</p>
+		          </div>
+		        </div>
+		        <div data-aos="zoom-in" data-aos-duration="350" data-aos-delay="600" class="number__unit">
+		          <div class="number__unit--img">
+		            <img src="img/ico_count_4.png" alt="img">
+		          </div>
+		          <div class="number__unit--text">
+		            <span class="__number" data-init="78" data-max="128"></span>
+		            <p>Tons of harvesta</p>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section>
+		    <div class="wrapper">
+		      <div aos-init aos-animate data-aos="fade" class="world">
+		        <h2 class="__head">WE ARE <span>ON THE WORLD</span></h2>
+		        <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		          reasonable.</p>
+		        <img data-aos="slide-up" data-aos-duration="800" data-aos-offset="50" class="img-adaptive"
+		          src="img/img_world_map.png" alt="img">
+		      </div>
+		    </div>
+		  </section>
+		  <section class="">
+		    <div class="gallery">
+		      <div class="gallery__unit large">
+		        <div class="gallery__unit--text">
+		          <div>
+		            <h2 class="__head">AGRO <span>PRODUCTS</span></h2>
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		              non-characteristic words etc.</p>
+		            <a class="transparent-button" href="#">ALL PRODUCTS</a>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="gallery__unit">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>fruits</h3>
+		          <img src="img/1.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		      <div class="gallery__unit">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>Vegatables</h3>
+		          <img src="img/2.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		      <div class="gallery__unit">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>livestock</h3>
+		          <img src="img/3.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		      <div class="gallery__unit">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>Sunflowers</h3>
+		          <img src="img/4.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		      <div class="gallery__unit large">
+		        <div class="gallery__unit--no-image">
+		          <p>12TYPE OF <br> PRODUCTS</p>
+		        </div>
+		      </div>
+		      <div class="gallery__unit no-text"></div>
+		      <div class="gallery__unit large">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>Wheat</h3>
+		          <img src="img/5.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		      <div class="gallery__unit">
+		        <div class="gallery__unit--img">
+		          <div></div>
+		          <h3>Spices</h3>
+		          <img src="img/6.jpg" alt="img">
+		          <a href="#"></a>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section class="__testimonials-bg">
+		    <div class="wrapper">
+		      <div class="testimonials">
+		        <div class="testimonials__text">
+		          <div aos-init aos-animate data-aos="fade">
+		            <h2 class="__head">PEOPLE SAYS <span>ABOUT AGRO</span></h2>
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable.</p>
+		          </div>
+		        </div>
+		        <div class="testimonials-slider">
+		          <div>
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		              non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+		              roots in a piece of classical Latin literature from 45 BC, making it over</p>
+		            <div class="testimonials-slider__info">
+		              <div><img src="img/ava.png" alt="ava"></div>
+		              <strong>Terens Smith</strong>
+		              <span>&nbsp;/&nbsp;CEO AntalAgro</span>
+		            </div>
+		          </div>
+		          <div>
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		              non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+		              roots in a piece of classical Latin literature from 45 BC, making it over</p>
+		            <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		              reasonable. The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		              non-characteristic words etc. Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+		              roots in a piece of classical Latin literature from 45 BC, making it over</p>
+		            <div class="testimonials-slider__info">
+		              <div><img src="img/ava.png" alt="ava"></div>
+		              <strong>Terens Smith</strong>
+		              <span>&nbsp;/&nbsp;CEO AntalAgro</span>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section class="__sell-banner-bg">
+		    <div class="sell-banner">
+		      <img src="img/site_logo.png" alt="img">
+		      <div class="sell-banner__info">
+		        <b>Fresh Apples</b><br>
+		        <span>in Our Store</span>
+		        <p>The generated Lorem Ipsum is therefore always free from repetition injected humour, or non-characteristic
+		          words etc.</p>
+		        <a class="transparent-button" href="#">BUY</a>
+		      </div>
+		      <div class="sell-banner__price">
+		        <div class="sell-banner__price--number">
+		          <p>1</p>
+		        </div>
+		        <div class="sell-banner__price--number">
+		          <span>50$</span>
+		          <span>Kg</span>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section>
+		    <div class="wrapper">
+		      <div class="blog">
+		        <div aos-init aos-animate data-aos="fade" class="blog--head">
+		          <h2 class="__head">BLOG&#x20;<span>POSTS</span></h2>
+		          <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		            reasonable.</p>
+		        </div>
+		        <div class="blog--posts">
+		          <div data-aos="flip-up" data-aos-delay="100" data-aos-offset="0" class="post">
+		            <div class="post--img">
+		              <div class="post--img__date">
+		                <span>07</span>
+		                <strong>Now</strong>
+		              </div>
+		              <img src="img/post_1.jpg" alt="">
+		            </div>
+		            <div class="post--text">
+		              <p class="category"><a href="#">ORGANIC FOOD/TIPS & GUIDES</a></p>
+		              <h3 class="__title"><a href="#">Tips for Ripening your Fruit</a></h3>
+		              <p class="text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		                non-characteristic words etc.</p>
+		              <a class="transparent-button" href="#">READ MORE</a>
+		            </div>
+		          </div>
+		          <div data-aos="flip-up" data-aos-delay="200" data-aos-offset="0" class="post">
+		            <div class="post--img">
+		              <div class="post--img__date">
+		                <span>03</span>
+		                <strong>Now</strong>
+		              </div>
+		              <img src="img/post_2.jpg" alt="">
+		            </div>
+		            <div class="post--text">
+		              <p class="category"><a href="#">DIET/ORGANIC FOOD</a></p>
+		              <h3 class="__title"><a href="#">Health Benefits of a Raw Food</a></h3>
+		              <p class="text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		                non-characteristic words etc.</p>
+		              <a class="transparent-button" href="#">READ MORE</a>
+		            </div>
+		          </div>
+		          <div data-aos="flip-up" data-aos-delay="300" data-aos-offset="0" class="post">
+		            <div class="post--img">
+		              <div class="post--img__date">
+		                <span>25</span>
+		                <strong>Oct</strong>
+		              </div>
+		              <img src="img/post_3.jpg" alt="">
+		            </div>
+		            <div class="post--text">
+		              <p class="category"><a href="#">DIET/ORGANIC FOOD</a></p>
+		              <h3 class="__title"><a href="#">Superfoods you should be eating</a></h3>
+		              <p class="text">The generated Lorem Ipsum is therefore always free from repetition injected humour, or
+		                non-characteristic words etc.</p>
+		              <a class="transparent-button" href="#">READ MORE</a>
+		            </div>
+		          </div>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section>
+		    <div class="wrapper">
+		      <div class="sponsor">
+		        <div class="sponsor-slider">
+		          <div><img src="img/sponsor_1.jpg" alt="img"></div>
+		          <div><img src="img/sponsor_2.jpg" alt="img"></div>
+		          <div><img src="img/sponsor_3.jpg" alt="img"></div>
+		          <div><img src="img/sponsor_4.jpg" alt="img"></div>
+		          <div><img src="img/sponsor_5.jpg" alt="img"></div>
+		        </div>
+		      </div>
+		    </div>
+		  </section>
+		  <section class="__feedback-bg">
+		    <div class="feedback">
+		      <div data-aos="fade" class="feedback--head">
+		        <h2 class="__head">GET <span>IN TOUCH</span></h2>
+		        <p>Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks
+		          reasonable.</p>
+		      </div>
+		      <div data-aos="fade" class="feedback--form">
+		        <form class="contact-form" action="#">
+		          <div class="short">
+		            <input name="name" placeholder="Name" type="text">
+		          </div>
+		          <div class="short">
+		            <input name="e-mail" placeholder="E-mail" type="text">
+		          </div>
+		          <div class="full">
+		            <textarea name="comments" placeholder="Comments" type="text"></textarea>
+		          </div>
+		          <button class="transparent-button" type="submit">SEND</button>
+		        </form>
+		      </div>
+		    </div>
+		  </section>
+		  <section>
+		    <div class="map">
+		      <div id="mapFooter"></div>
+		    </div>
+		  </section>
+		</main>
+		<script src="./js/main.js" defer></script>
+		
+		<script>
+		  function initMap() {
+		    var image = 'img/marker.png';
+		    var uluru = { lat: 44.95238, lng: 34.10292 };
+		    var map = new google.maps.Map(
+		      document.getElementById('mapFooter'), { zoom: 15, center: uluru, disableDefaultUI: true });
+		    var marker = new google.maps.Marker({ position: uluru, map: map, icon: image });
+		  }
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdnrnaG9JH0AZrlns7jTBlDGiPJKs4Gvo&callback=initMap" async
+		  defer></script>
+		<footer>
+		  <div class="wrapper">
+		    <div class="footer">
+		      <div class="footer--top">
+		        <div class="footer--top__links">
+		          <div class="logo">
+		            <a href=""><img src="img/site_logo.png" alt="logo"></a>
+		          </div>
+		          <div class="text">
+		            <p>523 Sylvan Ave, 5th Floor Mountain View, CA 94041USA</p>
+		            <p>+1 (234) 56789, +1 987 654 3210</p>
+		            <p><a href="mailto:support@agrocompany.com">support@agrocompany.com</a></p>
+		          </div>
+		        </div>
+		        <div class="footer--top__social">
+		          <ul>
+		            <li>
+		              <a href="https://twitter.com">
+		                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+		                  <title>twitter</title>
+		                  <path
+		                    d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"
+		                    id="twitter"></path>
+		                </svg>
+		              </a>
+		            </li>
+		            <li>
+		              <a href="https://facebook.com">
+		                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+		                  <title>facebook</title>
+		                  <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"
+		                    id="facebook"></path>
+		                </svg>
+		              </a>
+		            </li>
+		            <li>
+		              <a href="https://linkedin.com">
+		                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 32 32">
+		                  <title>linkedin</title>
+		                  <path
+		                    d="M29 0h-26c-1.65 0-3 1.35-3 3v26c0 1.65 1.35 3 3 3h26c1.65 0 3-1.35 3-3v-26c0-1.65-1.35-3-3-3zM12 26h-4v-14h4v14zM10 10c-1.106 0-2-0.894-2-2s0.894-2 2-2c1.106 0 2 0.894 2 2s-0.894 2-2 2zM26 26h-4v-8c0-1.106-0.894-2-2-2s-2 0.894-2 2v8h-4v-14h4v2.481c0.825-1.131 2.087-2.481 3.5-2.481 2.488 0 4.5 2.238 4.5 5v9z"
+		                    id="linkedin"></path>
+		                </svg>
+		              </a>
+		            </li>
+		          </ul>
+		        </div>
+		        <div class="footer--top__subscribe">
+		          <h5>GET A NEWSLATTER</h5>
+		          <form name="subscribe" action="">
+		            <div>
+		              <input placeholder="Your E-mail" type="text">
+		            </div>
+		            <button class="transparent-button">SUBSCRIBE</button>
+		          </form>
+		        </div>
+		      </div>
+		      <div class="footer--bottom">
+		        <div class="footer--bottom__copyright">
+		          <span>© 2019 Agro. All rights reserved. Created by <a href="#">CryNet</a></span>
+		        </div>
+		        <div class="footer--bottom__menu">
+		          <nav>
+		            <ul>
+		              <li>
+		                <a href="#">HOME</a>
+		              </li>
+		              <li>
+		                <a href="#">ABOUT</a>
+		              </li>
+		              <li>
+		                <a href="#">PAGES</a>
+		              </li>
+		              <li>
+		                <a href="#">GALLERY</a>
+		              </li>
+		              <li>
+		                <a href="#">BLOG</a>
+		              </li>
+		              <li>
+		                <a href="#">CONTACTS</a>
+		              </li>
+		            </ul>
+		          </nav>
+		        </div>
+		      </div>
+		    </div>
+		  </div>
+		</footer>
+	</body>
+</html>
