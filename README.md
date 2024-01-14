@@ -7,7 +7,7 @@ This is a free fork paid template [Agro](https://themeforest.net/item/agro-agric
 
 # How to use:
 * Download the build with [Git](https://git-scm.com/downloads): ```git clone https://github.com/uCryNet/Agriculture-HTML-Template```
-* Go to the build folder: ```cd Agriculture-HTML-Templat```
+* Go to the build folder: ```cd Agriculture-HTML-Template```
 * Install required dependencies: ```npm i```
 * To get started, enter the command: ```npm run dev``` (development mode)
 * To build a project, enter the command ```npm run build``` (build mode)
